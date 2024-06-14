@@ -21,6 +21,10 @@ export class LoginPage   {
       'password': new FormControl("", Validators.required)
     }); 
    }
-
+  // Método para manejar el evento de ingreso
+  ingresar() {
+    // Aquí puedes agregar la lógica para manejar el evento de ingreso
+    console.log('Ingresar button clicked');
+  }
 
 }
