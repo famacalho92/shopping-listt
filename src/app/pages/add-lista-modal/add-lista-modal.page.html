@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Añadir Lista</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()">
+        Cancelar
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nombre de la Lista</ion-label>
+      <ion-input [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Fecha</ion-label>
+      <ion-datetime display-format="MM/DD/YYYY" [(ngModel)]="fecha"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="guardarLista()">Guardar</ion-button>
+</ion-content>
